@@ -6,8 +6,6 @@ import (
 	"time"
 )
 
-var done = false
-
 func a(in <-chan int, out chan<- int, waitGroup *sync.WaitGroup) {
 	ticker := time.NewTicker(1 * time.Second)
 
